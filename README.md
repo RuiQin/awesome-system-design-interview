@@ -1,2 +1,68 @@
-# awesome-system-design-interview
-In-depth, worked system design interview guides — requirements, estimations, data models, APIs, high-level architecture, and deep dives. Free to read; practice each live with an AI voice mock interviewer.
+# Awesome System Design Interview
+
+> 31 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+
+Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
+
+## Contents
+
+- [Easy](#easy)
+- [Medium](#medium)
+- [Hard](#hard)
+
+## Easy
+
+- **[Design a Unique ID Generator](https://scaleinterview.ai/learn/system-design/unique-id-generator)** — Design a unique ID generator at scale with Snowflake — time-sortable 64-bit IDs, clock skew, sequences, and no single point of failure.
+- **[Design a URL Shortener](https://scaleinterview.ai/learn/system-design/url-shortener)** — A full system design walkthrough of a URL shortener like Bitly — requirements, estimations, data model, API, architecture, and code generation.
+- **[Design Consistent Hashing](https://scaleinterview.ai/learn/system-design/consistent-hashing)** — Consistent hashing explained — the hash ring, virtual nodes for balance, replication, and minimal key movement when nodes join or leave
+
+## Medium
+
+- **[Design a Collaborative To-Do List](https://scaleinterview.ai/learn/system-design/collaborative-todo-list)** — Design a real-time collaborative to-do list — WebSocket sync, item-level conflict resolution with CRDTs, reordering by order key, and offline merge.
+- **[Design a Distributed Cache](https://scaleinterview.ai/learn/system-design/distributed-cache)** — Distributed in-memory cache design like Redis — consistent hashing, virtual nodes, replication, LRU eviction, cache-aside, and invalidation.
+- **[Design a File Storage & Sync Service](https://scaleinterview.ai/learn/system-design/file-storage)** — A system design walkthrough of a file storage and sync service like Dropbox — chunked uploads, content-addressed deduplication, and multi-device sync.
+- **[Design a Likes System](https://scaleinterview.ai/learn/system-design/likes-system)** — System design of a like/unlike system at scale — idempotent likes, sharded counters for hot keys, has-liked lookups, and eventual consistency.
+- **[Design a Metrics Monitoring & Alerting System](https://scaleinterview.ai/learn/system-design/metrics-monitoring)** — Design metrics monitoring & alerting — time-series ingestion, TSDB rollups, cardinality, low-latency dashboards, and a reliable alert pipeline
+- **[Design a Notification System](https://scaleinterview.ai/learn/system-design/notification-system)** — A system design walkthrough of a multi-channel notification system — fan-out to push/email/SMS, at-least-once delivery, idempotency, and retries.
+- **[Design a Price Tracker](https://scaleinterview.ai/learn/system-design/price-tracker)** — A system design walkthrough of a price tracker like CamelCamelCamel — crawling at scale, time-series price history, and efficient alert evaluation.
+- **[Design a Real-Time Gaming Leaderboard](https://scaleinterview.ai/learn/system-design/gaming-leaderboard)** — Design a real-time gaming leaderboard — rank millions of players with sorted sets, get-rank, top-N and around-me queries, hot keys, and sharding.
+- **[Design a Web Crawler](https://scaleinterview.ai/learn/system-design/web-crawler)** — Design a web crawler at scale — URL frontier and politeness, robots.txt, bloom-filter dedup, canonicalization, and distributed fetcher workers.
+- **[Design an Ad Click Aggregator](https://scaleinterview.ai/learn/system-design/ad-click-aggregator)** — System design of an ad click aggregator at scale — stream processing, windowed aggregation with watermarks, exactly-once counting, and hot ads.
+- **[Design an API Rate Limiter](https://scaleinterview.ai/learn/system-design/rate-limiter)** — A system design walkthrough of a distributed API rate limiter — algorithms (token bucket, sliding window), atomic Redis counting, and placement.
+- **[Design Chess.com](https://scaleinterview.ai/learn/system-design/online-chess)** — System design of an online chess platform like Chess.com — Elo matchmaking, real-time moves over WebSocket, and server-authoritative clocks.
+- **[Design Search Autocomplete](https://scaleinterview.ai/learn/system-design/search-autocomplete)** — Design search autocomplete — prefix trie, top-K per node, frequency + recency ranking, sharded read path, sub-100ms suggestions at Google scale
+- **[Design Short Video Recommendation & Ranking](https://scaleinterview.ai/learn/system-design/short-video-recommendation)** — Design a short-video recommender — two-tower retrieval, a ranking model on watch-time + engagement, cold start, delayed labels, low-latency serving
+
+## Hard
+
+- **[Design a Chat App](https://scaleinterview.ai/learn/system-design/chat-app)** — A system design walkthrough of a chat app like WhatsApp — real-time delivery over persistent connections, message ordering, and read receipts.
+- **[Design a Delayed Payment Scheduler](https://scaleinterview.ai/learn/system-design/delayed-payment-scheduler)** — System design of a scheduled/delayed payment system — durable scheduling, exactly-once execution under retries, and hot wall-clock minutes.
+- **[Design a Distributed Message Queue](https://scaleinterview.ai/learn/system-design/distributed-message-queue)** — Design a distributed message queue (Kafka-style) — the append-only log, partitioning, replication, consumer groups, and delivery semantics.
+- **[Design a Friend-Played Game Counter](https://scaleinterview.ai/learn/system-design/friend-game-counter)** — Design a friend-played game counter — friends-who-played and live player counts via social-graph set intersection, fan-out, hot keys, near-real-time
+- **[Design a Matchmaking Service](https://scaleinterview.ai/learn/system-design/matchmaking-service)** — System design of a multiplayer matchmaking service — skill-based matching, queue pools, fairness vs wait-time, and game-server allocation.
+- **[Design a News Feed](https://scaleinterview.ai/learn/system-design/news-feed)** — A full system design walkthrough of a social news feed like Facebook or Twitter — requirements, estimations, data model, API, fan-out, and ranking.
+- **[Design a Payment System](https://scaleinterview.ai/learn/system-design/payment-system)** — System design of a payment system like Stripe — idempotent exactly-once charges, authorize-then-capture, and money/order consistency.
+- **[Design a Remote IDE](https://scaleinterview.ai/learn/system-design/online-ide)** — System design of a cloud IDE like Replit or Codespaces — isolating untrusted code, fast workspace cold start, and persisting the filesystem.
+- **[Design a Ride-Sharing Service](https://scaleinterview.ai/learn/system-design/ride-sharing)** — A system design walkthrough of a ride-sharing service like Uber — matching riders to nearby drivers, geospatial indexing, and location pings.
+- **[Design a Ticket Booking System](https://scaleinterview.ai/learn/system-design/ticket-booking)** — A system design walkthrough of a ticket booking system like Ticketmaster — seat holds, double-booking, waiting rooms, and idempotent payment.
+- **[Design a Video Streaming Service](https://scaleinterview.ai/learn/system-design/video-streaming)** — A system design walkthrough of a video streaming service like YouTube — resumable upload, the transcoding pipeline, and adaptive streaming.
+- **[Design ChatGPT](https://scaleinterview.ai/learn/system-design/llm-inference)** — A system design walkthrough of an LLM inference service like ChatGPT — token streaming over SSE, GPU scheduling, continuous batching, and KV cache.
+- **[Design Google Docs](https://scaleinterview.ai/learn/system-design/google-docs)** — System design of a collaborative editor like Google Docs — concurrent-edit conflict resolution (OT vs CRDT), live cursors, and offline sync.
+- **[Design Instagram](https://scaleinterview.ai/learn/system-design/instagram)** — Design Instagram — media upload to blob store + CDN, hybrid fan-out feed with celebrity problem, follow graph, and like counters at scale
+
+## About Scale Interview
+
+[Scale Interview](https://scaleinterview.ai) is an AI-powered platform for real-time **voice** system design interview practice. Instead of just reading a solution, you talk through the problem out loud with an AI interviewer that asks real follow-ups, challenges your tradeoffs, and pushes on scale — then gives you structured feedback afterward.
+
+- 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
+- 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
+- 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
+- 📚 **31 in-depth guides** — every one above, practiceable live
+
+**[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
+
+---
+
+Guides maintained by **[Scale Interview](https://scaleinterview.ai)**. Want a topic added? Open an issue.
+
+<!-- Generated from the Scale Interview guide catalog. Do not edit by hand. -->
