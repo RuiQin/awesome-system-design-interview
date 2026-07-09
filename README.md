@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 31 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 36 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -15,6 +15,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design a Unique ID Generator](https://scaleinterview.ai/learn/system-design/unique-id-generator)** — Design a unique ID generator at scale with Snowflake — time-sortable 64-bit IDs, clock skew, sequences, and no single point of failure.
 - **[Design a URL Shortener](https://scaleinterview.ai/learn/system-design/url-shortener)** — A full system design walkthrough of a URL shortener like Bitly — requirements, estimations, data model, API, architecture, and code generation.
 - **[Design Consistent Hashing](https://scaleinterview.ai/learn/system-design/consistent-hashing)** — Consistent hashing explained — the hash ring, virtual nodes for balance, replication, and minimal key movement when nodes join or leave
+- **[Design Pastebin](https://scaleinterview.ai/learn/system-design/pastebin)** — Design Pastebin — create and read text pastes by unique key, keep large blobs in object storage, expire with TTL, scale reads via caching and CDN
 
 ## Medium
 
@@ -32,6 +33,8 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design Chess.com](https://scaleinterview.ai/learn/system-design/online-chess)** — System design of an online chess platform like Chess.com — Elo matchmaking, real-time moves over WebSocket, and server-authoritative clocks.
 - **[Design Search Autocomplete](https://scaleinterview.ai/learn/system-design/search-autocomplete)** — Design search autocomplete — prefix trie, top-K per node, frequency + recency ranking, sharded read path, sub-100ms suggestions at Google scale
 - **[Design Short Video Recommendation & Ranking](https://scaleinterview.ai/learn/system-design/short-video-recommendation)** — Design a short-video recommender — two-tower retrieval, a ranking model on watch-time + engagement, cold start, delayed labels, low-latency serving
+- **[Design Tinder](https://scaleinterview.ai/learn/system-design/tinder)** — Design Tinder — billions of swipes at scale, mutual-match detection on the write path, geospatial candidate generation, and match notifications
+- **[Design Yelp](https://scaleinterview.ai/learn/system-design/yelp)** — Design Yelp — nearby-business proximity search over a geospatial index (geohash/quadtree), ratings and reviews, and a read-heavy serving path
 
 ## Hard
 
@@ -44,8 +47,10 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design a Payment System](https://scaleinterview.ai/learn/system-design/payment-system)** — System design of a payment system like Stripe — idempotent exactly-once charges, authorize-then-capture, and money/order consistency.
 - **[Design a Remote IDE](https://scaleinterview.ai/learn/system-design/online-ide)** — System design of a cloud IDE like Replit or Codespaces — isolating untrusted code, fast workspace cold start, and persisting the filesystem.
 - **[Design a Ride-Sharing Service](https://scaleinterview.ai/learn/system-design/ride-sharing)** — A system design walkthrough of a ride-sharing service like Uber — matching riders to nearby drivers, geospatial indexing, and location pings.
+- **[Design a Stock Exchange](https://scaleinterview.ai/learn/system-design/stock-exchange)** — Design a stock exchange — limit order book, price-time-priority matching engine, microsecond latency, and event-sourced durability with recovery
 - **[Design a Ticket Booking System](https://scaleinterview.ai/learn/system-design/ticket-booking)** — A system design walkthrough of a ticket booking system like Ticketmaster — seat holds, double-booking, waiting rooms, and idempotent payment.
 - **[Design a Video Streaming Service](https://scaleinterview.ai/learn/system-design/video-streaming)** — A system design walkthrough of a video streaming service like YouTube — resumable upload, the transcoding pipeline, and adaptive streaming.
+- **[Design an Object Storage Service](https://scaleinterview.ai/learn/system-design/s3-object-storage)** — Design an S3 object store — buckets and objects, a metadata service mapping keys to chunks, 11-nines durability via replication or erasure coding
 - **[Design ChatGPT](https://scaleinterview.ai/learn/system-design/llm-inference)** — A system design walkthrough of an LLM inference service like ChatGPT — token streaming over SSE, GPU scheduling, continuous batching, and KV cache.
 - **[Design Google Docs](https://scaleinterview.ai/learn/system-design/google-docs)** — System design of a collaborative editor like Google Docs — concurrent-edit conflict resolution (OT vs CRDT), live cursors, and offline sync.
 - **[Design Instagram](https://scaleinterview.ai/learn/system-design/instagram)** — Design Instagram — media upload to blob store + CDN, hybrid fan-out feed with celebrity problem, follow graph, and like counters at scale
@@ -57,7 +62,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **31 in-depth guides** — every one above, practiceable live
+- 📚 **36 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
