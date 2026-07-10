@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 37 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 38 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -28,6 +28,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design a Price Tracker](https://scaleinterview.ai/learn/system-design/price-tracker)** — A system design walkthrough of a price tracker like CamelCamelCamel — crawling at scale, time-series price history, and efficient alert evaluation.
 - **[Design a Real-Time Gaming Leaderboard](https://scaleinterview.ai/learn/system-design/gaming-leaderboard)** — Design a real-time gaming leaderboard — rank millions of players with sorted sets, get-rank, top-N and around-me queries, hot keys, and sharding.
 - **[Design a Web Crawler](https://scaleinterview.ai/learn/system-design/web-crawler)** — Design a web crawler at scale — URL frontier and politeness, robots.txt, bloom-filter dedup, canonicalization, and distributed fetcher workers.
+- **[Design an A/B Testing System](https://scaleinterview.ai/learn/system-design/ab-testing)** — Design an A/B testing platform — variant assignment, low-latency config delivery, exposure and outcome logging, and honest statistical significance
 - **[Design an Ad Click Aggregator](https://scaleinterview.ai/learn/system-design/ad-click-aggregator)** — System design of an ad click aggregator at scale — stream processing, windowed aggregation with watermarks, exactly-once counting, and hot ads.
 - **[Design an API Rate Limiter](https://scaleinterview.ai/learn/system-design/rate-limiter)** — A system design walkthrough of a distributed API rate limiter — algorithms (token bucket, sliding window), atomic Redis counting, and placement.
 - **[Design Chess.com](https://scaleinterview.ai/learn/system-design/online-chess)** — System design of an online chess platform like Chess.com — Elo matchmaking, real-time moves over WebSocket, and server-authoritative clocks.
@@ -63,7 +64,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **37 in-depth guides** — every one above, practiceable live
+- 📚 **38 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
