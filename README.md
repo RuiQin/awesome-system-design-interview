@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 36 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 37 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -50,6 +50,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design a Stock Exchange](https://scaleinterview.ai/learn/system-design/stock-exchange)** — Design a stock exchange — limit order book, price-time-priority matching engine, microsecond latency, and event-sourced durability with recovery
 - **[Design a Ticket Booking System](https://scaleinterview.ai/learn/system-design/ticket-booking)** — A system design walkthrough of a ticket booking system like Ticketmaster — seat holds, double-booking, waiting rooms, and idempotent payment.
 - **[Design a Video Streaming Service](https://scaleinterview.ai/learn/system-design/video-streaming)** — A system design walkthrough of a video streaming service like YouTube — resumable upload, the transcoding pipeline, and adaptive streaming.
+- **[Design an Ads Ranking System](https://scaleinterview.ai/learn/system-design/ads-ranking)** — Design an ads ranking system — candidate ad scoring, multi-task engagement models, calibration for the auction, and delayed-conversion labels
 - **[Design an Object Storage Service](https://scaleinterview.ai/learn/system-design/s3-object-storage)** — Design an S3 object store — buckets and objects, a metadata service mapping keys to chunks, 11-nines durability via replication or erasure coding
 - **[Design ChatGPT](https://scaleinterview.ai/learn/system-design/llm-inference)** — A system design walkthrough of an LLM inference service like ChatGPT — token streaming over SSE, GPU scheduling, continuous batching, and KV cache.
 - **[Design Google Docs](https://scaleinterview.ai/learn/system-design/google-docs)** — System design of a collaborative editor like Google Docs — concurrent-edit conflict resolution (OT vs CRDT), live cursors, and offline sync.
@@ -62,7 +63,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **36 in-depth guides** — every one above, practiceable live
+- 📚 **37 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
