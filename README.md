@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 38 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 43 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -21,6 +21,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 
 - **[Design a Collaborative To-Do List](https://scaleinterview.ai/learn/system-design/collaborative-todo-list)** — Design a real-time collaborative to-do list — WebSocket sync, item-level conflict resolution with CRDTs, reordering by order key, and offline merge.
 - **[Design a Distributed Cache](https://scaleinterview.ai/learn/system-design/distributed-cache)** — Distributed in-memory cache design like Redis — consistent hashing, virtual nodes, replication, LRU eviction, cache-aside, and invalidation.
+- **[Design a Distributed Key-Value Store](https://scaleinterview.ai/learn/system-design/key-value-store)** — Durable distributed key-value store — consistent-hashing partitioning, N-way replication, tunable quorum reads/writes, vector-clock conflict fixes
 - **[Design a File Storage & Sync Service](https://scaleinterview.ai/learn/system-design/file-storage)** — A system design walkthrough of a file storage and sync service like Dropbox — chunked uploads, content-addressed deduplication, and multi-device sync.
 - **[Design a Likes System](https://scaleinterview.ai/learn/system-design/likes-system)** — System design of a like/unlike system at scale — idempotent likes, sharded counters for hot keys, has-liked lookups, and eventual consistency.
 - **[Design a Metrics Monitoring & Alerting System](https://scaleinterview.ai/learn/system-design/metrics-monitoring)** — Design metrics monitoring & alerting — time-series ingestion, TSDB rollups, cardinality, low-latency dashboards, and a reliable alert pipeline
@@ -34,6 +35,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design Chess.com](https://scaleinterview.ai/learn/system-design/online-chess)** — System design of an online chess platform like Chess.com — Elo matchmaking, real-time moves over WebSocket, and server-authoritative clocks.
 - **[Design Search Autocomplete](https://scaleinterview.ai/learn/system-design/search-autocomplete)** — Design search autocomplete — prefix trie, top-K per node, frequency + recency ranking, sharded read path, sub-100ms suggestions at Google scale
 - **[Design Short Video Recommendation & Ranking](https://scaleinterview.ai/learn/system-design/short-video-recommendation)** — Design a short-video recommender — two-tower retrieval, a ranking model on watch-time + engagement, cold start, delayed labels, low-latency serving
+- **[Design Slack](https://scaleinterview.ai/learn/system-design/slack)** — Design Slack team chat — workspaces and channels, real-time message delivery over WebSockets, presence, unread state, and searchable message history
 - **[Design Tinder](https://scaleinterview.ai/learn/system-design/tinder)** — Design Tinder — billions of swipes at scale, mutual-match detection on the write path, geospatial candidate generation, and match notifications
 - **[Design Yelp](https://scaleinterview.ai/learn/system-design/yelp)** — Design Yelp — nearby-business proximity search over a geospatial index (geohash/quadtree), ratings and reviews, and a read-heavy serving path
 
@@ -41,6 +43,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 
 - **[Design a Chat App](https://scaleinterview.ai/learn/system-design/chat-app)** — A system design walkthrough of a chat app like WhatsApp — real-time delivery over persistent connections, message ordering, and read receipts.
 - **[Design a Delayed Payment Scheduler](https://scaleinterview.ai/learn/system-design/delayed-payment-scheduler)** — System design of a scheduled/delayed payment system — durable scheduling, exactly-once execution under retries, and hot wall-clock minutes.
+- **[Design a Digital Wallet](https://scaleinterview.ai/learn/system-design/digital-wallet)** — Design a digital wallet — balances backed by a double-entry ledger, idempotent transfers, atomic debit/credit, and no double-spend under concurrency
 - **[Design a Distributed Message Queue](https://scaleinterview.ai/learn/system-design/distributed-message-queue)** — Design a distributed message queue (Kafka-style) — the append-only log, partitioning, replication, consumer groups, and delivery semantics.
 - **[Design a Friend-Played Game Counter](https://scaleinterview.ai/learn/system-design/friend-game-counter)** — Design a friend-played game counter — friends-who-played and live player counts via social-graph set intersection, fan-out, hot keys, near-real-time
 - **[Design a Matchmaking Service](https://scaleinterview.ai/learn/system-design/matchmaking-service)** — System design of a multiplayer matchmaking service — skill-based matching, queue pools, fairness vs wait-time, and game-server allocation.
@@ -51,10 +54,12 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design a Stock Exchange](https://scaleinterview.ai/learn/system-design/stock-exchange)** — Design a stock exchange — limit order book, price-time-priority matching engine, microsecond latency, and event-sourced durability with recovery
 - **[Design a Ticket Booking System](https://scaleinterview.ai/learn/system-design/ticket-booking)** — A system design walkthrough of a ticket booking system like Ticketmaster — seat holds, double-booking, waiting rooms, and idempotent payment.
 - **[Design a Video Streaming Service](https://scaleinterview.ai/learn/system-design/video-streaming)** — A system design walkthrough of a video streaming service like YouTube — resumable upload, the transcoding pipeline, and adaptive streaming.
+- **[Design Amazon](https://scaleinterview.ai/learn/system-design/amazon)** — Design Amazon — product catalog and search, cart, and order placement with inventory that never oversells via reservations, idempotency, and a saga.
 - **[Design an Ads Ranking System](https://scaleinterview.ai/learn/system-design/ads-ranking)** — Design an ads ranking system — candidate ad scoring, multi-task engagement models, calibration for the auction, and delayed-conversion labels
 - **[Design an Object Storage Service](https://scaleinterview.ai/learn/system-design/s3-object-storage)** — Design an S3 object store — buckets and objects, a metadata service mapping keys to chunks, 11-nines durability via replication or erasure coding
 - **[Design ChatGPT](https://scaleinterview.ai/learn/system-design/llm-inference)** — A system design walkthrough of an LLM inference service like ChatGPT — token streaming over SSE, GPU scheduling, continuous batching, and KV cache.
 - **[Design Google Docs](https://scaleinterview.ai/learn/system-design/google-docs)** — System design of a collaborative editor like Google Docs — concurrent-edit conflict resolution (OT vs CRDT), live cursors, and offline sync.
+- **[Design Google Maps](https://scaleinterview.ai/learn/system-design/google-maps)** — Design Google Maps — road-network shortest-path routing via contraction hierarchies, live-traffic ETA from GPS probes, and quadtree map tiles
 - **[Design Instagram](https://scaleinterview.ai/learn/system-design/instagram)** — Design Instagram — media upload to blob store + CDN, hybrid fan-out feed with celebrity problem, follow graph, and like counters at scale
 
 ## About Scale Interview
@@ -64,7 +69,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **38 in-depth guides** — every one above, practiceable live
+- 📚 **43 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
