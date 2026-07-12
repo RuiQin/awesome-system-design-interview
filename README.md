@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 43 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 48 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -21,9 +21,12 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 
 - **[Design a Collaborative To-Do List](https://scaleinterview.ai/learn/system-design/collaborative-todo-list)** — Design a real-time collaborative to-do list — WebSocket sync, item-level conflict resolution with CRDTs, reordering by order key, and offline merge.
 - **[Design a Distributed Cache](https://scaleinterview.ai/learn/system-design/distributed-cache)** — Distributed in-memory cache design like Redis — consistent hashing, virtual nodes, replication, LRU eviction, cache-aside, and invalidation.
+- **[Design a Distributed Job Scheduler](https://scaleinterview.ai/learn/system-design/job-scheduler)** — Design a distributed job scheduler — schedule jobs at a time, at-least-once execution, recurring cron jobs, retries and worker leasing.
 - **[Design a Distributed Key-Value Store](https://scaleinterview.ai/learn/system-design/key-value-store)** — Durable distributed key-value store — consistent-hashing partitioning, N-way replication, tunable quorum reads/writes, vector-clock conflict fixes
 - **[Design a File Storage & Sync Service](https://scaleinterview.ai/learn/system-design/file-storage)** — A system design walkthrough of a file storage and sync service like Dropbox — chunked uploads, content-addressed deduplication, and multi-device sync.
+- **[Design a Hotel Reservation System](https://scaleinterview.ai/learn/system-design/hotel-reservation)** — Design a hotel reservation system — search available rooms by date range, book without overbooking, the availability calendar, plus cancellations
 - **[Design a Likes System](https://scaleinterview.ai/learn/system-design/likes-system)** — System design of a like/unlike system at scale — idempotent likes, sharded counters for hot keys, has-liked lookups, and eventual consistency.
+- **[Design a Local Delivery Service](https://scaleinterview.ai/learn/system-design/local-delivery)** — Design DoorDash — courier matching timed to prep time, real-time tracking with ETA, and an order lifecycle across customer, restaurant, and courier.
 - **[Design a Metrics Monitoring & Alerting System](https://scaleinterview.ai/learn/system-design/metrics-monitoring)** — Design metrics monitoring & alerting — time-series ingestion, TSDB rollups, cardinality, low-latency dashboards, and a reliable alert pipeline
 - **[Design a Notification System](https://scaleinterview.ai/learn/system-design/notification-system)** — A system design walkthrough of a multi-channel notification system — fan-out to push/email/SMS, at-least-once delivery, idempotency, and retries.
 - **[Design a Price Tracker](https://scaleinterview.ai/learn/system-design/price-tracker)** — A system design walkthrough of a price tracker like CamelCamelCamel — crawling at scale, time-series price history, and efficient alert evaluation.
@@ -57,7 +60,9 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design Amazon](https://scaleinterview.ai/learn/system-design/amazon)** — Design Amazon — product catalog and search, cart, and order placement with inventory that never oversells via reservations, idempotency, and a saga.
 - **[Design an Ads Ranking System](https://scaleinterview.ai/learn/system-design/ads-ranking)** — Design an ads ranking system — candidate ad scoring, multi-task engagement models, calibration for the auction, and delayed-conversion labels
 - **[Design an Object Storage Service](https://scaleinterview.ai/learn/system-design/s3-object-storage)** — Design an S3 object store — buckets and objects, a metadata service mapping keys to chunks, 11-nines durability via replication or erasure coding
+- **[Design an Online Auction](https://scaleinterview.ai/learn/system-design/online-auction)** — Design an online auction — bidding under concurrency, highest-bid consistency, a timed close with anti-snipe, and live price updates to watchers
 - **[Design ChatGPT](https://scaleinterview.ai/learn/system-design/llm-inference)** — A system design walkthrough of an LLM inference service like ChatGPT — token streaming over SSE, GPU scheduling, continuous batching, and KV cache.
+- **[Design Facebook Post Search](https://scaleinterview.ai/learn/system-design/fb-post-search)** — Facebook post search — inverted index, document sharding, ranking by relevance and recency, real-time post indexing at scale
 - **[Design Google Docs](https://scaleinterview.ai/learn/system-design/google-docs)** — System design of a collaborative editor like Google Docs — concurrent-edit conflict resolution (OT vs CRDT), live cursors, and offline sync.
 - **[Design Google Maps](https://scaleinterview.ai/learn/system-design/google-maps)** — Design Google Maps — road-network shortest-path routing via contraction hierarchies, live-traffic ETA from GPS probes, and quadtree map tiles
 - **[Design Instagram](https://scaleinterview.ai/learn/system-design/instagram)** — Design Instagram — media upload to blob store + CDN, hybrid fan-out feed with celebrity problem, follow graph, and like counters at scale
@@ -69,7 +74,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **43 in-depth guides** — every one above, practiceable live
+- 📚 **48 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
