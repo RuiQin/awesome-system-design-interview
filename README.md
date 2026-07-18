@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 55 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 60 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -39,9 +39,12 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design an Email Service](https://scaleinterview.ai/learn/system-design/distributed-email)** — Design an email service — sending and receiving mail over SMTP, mailbox storage with threads and labels, full-text search, and spam filtering
 - **[Design Chess.com](https://scaleinterview.ai/learn/system-design/online-chess)** — System design of an online chess platform like Chess.com — Elo matchmaking, real-time moves over WebSocket, and server-authoritative clocks.
 - **[Design LeetCode](https://scaleinterview.ai/learn/system-design/leetcode)** — Design a LeetCode online judge — submitting code, sandboxed execution against test cases, a judging queue and worker fleet, contests and ranking.
+- **[Design Nearby Friends (Real-Time Location) System Design](https://scaleinterview.ai/learn/system-design/nearby-friends)** — Design Nearby Friends — real-time location, geohash proximity cells, and pub/sub fan-out over the friend graph to show friends nearby, live
+- **[Design Reddit (Forum & Comments) System Design](https://scaleinterview.ai/learn/system-design/reddit)** — Design Reddit — model nested comment trees, rank posts and comments by time-decayed votes, and serve read-heavy subreddit and home feeds at scale.
 - **[Design Search Autocomplete](https://scaleinterview.ai/learn/system-design/search-autocomplete)** — Design search autocomplete — prefix trie, top-K per node, frequency + recency ranking, sharded read path, sub-100ms suggestions at Google scale
 - **[Design Short Video Recommendation & Ranking](https://scaleinterview.ai/learn/system-design/short-video-recommendation)** — Design a short-video recommender — two-tower retrieval, a ranking model on watch-time + engagement, cold start, delayed labels, low-latency serving
 - **[Design Slack](https://scaleinterview.ai/learn/system-design/slack)** — Design Slack team chat — workspaces and channels, real-time message delivery over WebSockets, presence, unread state, and searchable message history
+- **[Design Spotify (Music Streaming) System Design](https://scaleinterview.ai/learn/system-design/spotify)** — Design Spotify music streaming — audio delivery with prefetch and offline sync, catalog and playlists, and Discover-Weekly recommendations.
 - **[Design Strava](https://scaleinterview.ai/learn/system-design/strava)** — Design Strava — recording GPS activities, matching a track to segments with a spatial index, and per-segment leaderboards
 - **[Design Tinder](https://scaleinterview.ai/learn/system-design/tinder)** — Design Tinder — billions of swipes at scale, mutual-match detection on the write path, geospatial candidate generation, and match notifications
 - **[Design Yelp](https://scaleinterview.ai/learn/system-design/yelp)** — Design Yelp — nearby-business proximity search over a geospatial index (geohash/quadtree), ratings and reviews, and a read-heavy serving path
@@ -73,6 +76,8 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design Google Maps](https://scaleinterview.ai/learn/system-design/google-maps)** — Design Google Maps — road-network shortest-path routing via contraction hierarchies, live-traffic ETA from GPS probes, and quadtree map tiles
 - **[Design Instagram](https://scaleinterview.ai/learn/system-design/instagram)** — Design Instagram — media upload to blob store + CDN, hybrid fan-out feed with celebrity problem, follow graph, and like counters at scale
 - **[Design Robinhood](https://scaleinterview.ai/learn/system-design/robinhood)** — Design Robinhood — placing orders routed to an exchange, real-time market-data fan-out over WebSockets, and portfolio and positions consistency
+- **[Design Top K YouTube Videos (Heavy Hitters) System Design](https://scaleinterview.ai/learn/system-design/youtube-top-k)** — Design top-K trending YouTube videos — streaming heavy hitters with a count-min sketch, tumbling and sliding time windows, and exact reconciliation.
+- **[Design Twitter (X) System Design](https://scaleinterview.ai/learn/system-design/twitter)** — Design Twitter (X) — hybrid home-timeline fan-out, the celebrity problem, a precomputed timeline cache, and real-time trending topics
 
 ## About Scale Interview
 
@@ -81,7 +86,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **55 in-depth guides** — every one above, practiceable live
+- 📚 **60 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
