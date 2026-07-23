@@ -1,6 +1,6 @@
 # Awesome System Design Interview
 
-> 60 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
+> 61 in-depth, worked system design interview guides — functional and non-functional requirements, capacity estimations, data models, API design, high-level architecture, and deep dives. Free to read.
 
 Each guide has a fully interactive version — Mermaid diagrams, hover-to-define glossary terms, and a companion AI **voice** mock interviewer — at **[Scale Interview](https://scaleinterview.ai/learn)**.
 
@@ -76,6 +76,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - **[Design Google Maps](https://scaleinterview.ai/learn/system-design/google-maps)** — Design Google Maps — road-network shortest-path routing via contraction hierarchies, live-traffic ETA from GPS probes, and quadtree map tiles
 - **[Design Instagram](https://scaleinterview.ai/learn/system-design/instagram)** — Design Instagram — media upload to blob store + CDN, hybrid fan-out feed with celebrity problem, follow graph, and like counters at scale
 - **[Design Robinhood](https://scaleinterview.ai/learn/system-design/robinhood)** — Design Robinhood — placing orders routed to an exchange, real-time market-data fan-out over WebSockets, and portfolio and positions consistency
+- **[Design Snapchat](https://scaleinterview.ai/learn/system-design/snapchat)** — Design Snapchat — ephemeral snaps and 24-hour stories with delete-after-view, per-recipient TTL expiry, short-lived CDN media, and true deletion
 - **[Design Top K YouTube Videos (Heavy Hitters) System Design](https://scaleinterview.ai/learn/system-design/youtube-top-k)** — Design top-K trending YouTube videos — streaming heavy hitters with a count-min sketch, tumbling and sliding time windows, and exact reconciliation.
 - **[Design Twitter (X) System Design](https://scaleinterview.ai/learn/system-design/twitter)** — Design Twitter (X) — hybrid home-timeline fan-out, the celebrity problem, a precomputed timeline cache, and real-time trending topics
 
@@ -86,7 +87,7 @@ Each guide has a fully interactive version — Mermaid diagrams, hover-to-define
 - 🎙️ **Voice-first mock interviews** — explain out loud, like the real thing
 - 🔀 **Adaptive follow-ups** — probes your weak spots, not a fixed script
 - 📊 **Structured feedback** — requirements, tradeoffs, communication, depth
-- 📚 **60 in-depth guides** — every one above, practiceable live
+- 📚 **61 in-depth guides** — every one above, practiceable live
 
 **[Try a free interview → https://scaleinterview.ai/mock](https://scaleinterview.ai/mock)**
 
